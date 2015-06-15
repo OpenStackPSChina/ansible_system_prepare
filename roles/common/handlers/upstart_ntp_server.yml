@@ -1,0 +1,4 @@
+---
+# upstart ntp server
+- name: upstart ntp server
+  server: name=ntp enabled=yes

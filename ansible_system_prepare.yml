@@ -1,0 +1,17 @@
+---
+- hosts:
+  - nova_controller_nodes
+  - nova_compute_nodes
+  - neutron_server_nodes
+  - neutron_network_nodes
+  - block_storage_nodes
+  - swift_proxy_nodes
+  - swift_storage_nodes
+
+  remote_user: pscloud
+  become: yes
+  become_user: root
+  become_method: su
+
+  roles:
+  - common

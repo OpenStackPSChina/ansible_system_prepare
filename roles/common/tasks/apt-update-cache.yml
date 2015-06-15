@@ -1,0 +1,4 @@
+---
+# update apt cache after sources.list is setup
+- name: apt update cache
+  apt: update_cache=yes

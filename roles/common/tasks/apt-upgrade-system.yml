@@ -1,0 +1,4 @@
+---
+# upgrade packages after apt cache is updated
+- name: apt upgrade system
+  apt: upgrade=yes

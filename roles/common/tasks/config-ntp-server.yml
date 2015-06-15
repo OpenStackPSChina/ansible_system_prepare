@@ -1,0 +1,13 @@
+---
+# config ntp server
+- name: config ntp server
+  template:
+    src=ntp.conf.j2
+    dest=/etc/ntp.conf
+    backup=yes
+    ower=root
+    group=root
+    mode=0644
+  notify:
+    - restart ntp server
+    - upstart ntp server

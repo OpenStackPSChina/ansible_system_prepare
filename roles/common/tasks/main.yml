@@ -1,0 +1,7 @@
+---
+# include other tasks
+- include: apt-setup-sources.yml
+- include: apt-update-cache.yml
+- include: apt-upgrade-system.yml
+- include: install-ntp-server.yml
+- include: config-ntp-server.yml

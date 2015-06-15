@@ -1,0 +1,6 @@
+---
+# install ntp packages
+- name: install ntp server
+  apt:
+    pkg=ntp
+    state=latest

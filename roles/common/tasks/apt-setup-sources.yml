@@ -1,0 +1,10 @@
+---
+# setup apt sources.list
+- name: apt setup sources
+  template: 
+    src=sources.list.j2
+    dest=/etc/apt/sources.list
+    backup=yes
+    ower=root
+    group=root
+    mode=0644
